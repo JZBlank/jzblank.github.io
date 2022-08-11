@@ -73,13 +73,13 @@ nav ul li:last-child{
 .welcome{
   width: 100%;
   text-align: center;
-  height: 550px;
   color: black;
   background-color: white;
 }
 
 .welcome_container{
   font-size: 60px;
+  height: 550px;
 }
 
 .welcome_text{
@@ -137,9 +137,10 @@ nav ul li:last-child{
 
 .aboutPage_container{
   width: 50%;
-  text-align: center;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
+  height: 550px;
 }
 
 .aboutTextTitle{
@@ -157,6 +158,7 @@ nav ul li:last-child{
 .portfolioPage{
   width: 100%;
   display: none;
+  height: 900px;
 }
 
 .portfolio_container{
@@ -178,13 +180,21 @@ nav ul li:last-child{
   margin-top: 30px;
   box-shadow: 2px 2px 10px black;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .item .item_img img{
   width: 100%;
-  height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  height: 300px;
+  border-radius: 10px;
+  transition: 0.2s;
+  position: relative;
+}
+
+.item .item_img img:hover{
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  filter: brightness(10%);
 }
 
 .item .item_text{
@@ -193,8 +203,42 @@ nav ul li:last-child{
   background-color: black;
   padding: 10px;
   color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+
+}
+
+.button{
+  position: absolute;
+  color: white;
+  width: 30%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #5FEBFC;
+  padding: 10px;
+  color: black;
+  opacity: 0;
+}
+
+.item .item_img img:hover + .button{
+  transition: 0.2s;
+  opacity: 100;
+}
+
+.item .item_img img ~ .button:hover{
+  transition: 0.2s;
+  opacity: 100;
+}
+
+
+.item .button a:hover ~ .item_img img {
+  transform: scale(1.1);
+  filter: brightness(10%);
 }
 
 

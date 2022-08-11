@@ -21,8 +21,9 @@ $(document).ready(function(){
 
   $('#portfolio_nav').click(function(){
     $('.welcome_container').hide();
-    $('#about').hide();
+    $('.aboutPage').hide();
     $('#portfolio').show();
+    $('footer').css({'top-margin': '900px;'});
   })
 
 })
