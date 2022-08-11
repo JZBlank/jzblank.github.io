@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Joyce Zhang - Portfolio Website</title>
-  </head>
+<html lang="en">
+<head>
+  <title>Joyce Zhang - Portfolio Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- LINK CSS FILES -->
+  <link rel="stylesheet" href="style.css">
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
   <body>
-    <h1>TEST</h1>
+    <!-- Navbar -->
+     <header>
+       <nav>
+          <ul>
+            <li><div class="name"><a href="#">Joyce Zhang</a></h1></li>
+            <li><a href="#about" class='underline'>About</a><a href="#" class='underline'>Portfolio</a><a href="#" class='underline'>Contact</a></li>
+          </ul>
+       </nav>
+    </header>
+
+    <div class="welcome">
+      <div class="welcome_container">
+        <div class="welcome_text">
+          <div class="welcome_title1">
+            Hi I'm <span style="color:#FF88C5;"><b>Joyce.</b></span>
+          </div>
+          <div class="welcome_title2">
+            Front-end developer • Software Engineer <br><b>**Website still under construction**</b>
+          </div>
+        </div>
+        <button type="button" name="button">Learn More</button>
+      </div>
+    </div>
+
+    <div class="aboutPage" id="about">
+      <div class="aboutPage_container">
+        <div class="aboutTextTitle">
+          About
+        </div>
+        <div class="aboutText">
+          My name is Joyce Zhang. I'm a senior studying Computer Science at CUNY Hunter College. I am actively looking for my first full-time job and internships during my last fall, winter and spring semesters at Hunter College. While my journey as an undergraduate may be ending, I will always be eager to learn new things everyday. After being exposed to front and back-end web development, this motivation is only growing. I am creative, open-minded and always put all my effort into everything I do.
+        </div>
+
+      </div>
+    </div>
+
+    <div class="portfolioPage">
+      <div class="portfolio_container">
+        <div class="portfolio_title">
+          Projects
+        </div>
+
+        <div class="fluid-container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="item">
+                <div class="item_img">
+                  <img src="img/proj1.png" alt="Image of Project 1">
+                </div>
+                <div class="item_text">
+                  2D Java Game
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="item">
+                <div class="item_img">
+                  <img src="img/proj2.png" alt="Image of Project 2">
+                </div>
+                <div class="item_text">
+                  Static Website
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+              <div class="item">
+                <div class="item_img">
+                  <img src="img/proj3.png" alt="Image of Project 3">
+                </div>
+                <div class="item_text">
+                  Sales Website
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer_container">
+        <div class="icons">
+          <a href="https://github.com/JZBlank" target="_blank"><img src="img/github.png" alt="Github Icon"></a>
+          <a href="https://www.linkedin.com/in/joyce-zhang-a93637197/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn Icon"></a>
+          <a href="mailto:joycezhang2065@gmail.com" target="_blank"><img src="img/email.png" alt="Email Icon"></a>
+        </div>
+        <div class="text">@Created and designed by Joyce Zhang 2022</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
